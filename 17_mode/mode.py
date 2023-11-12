@@ -11,3 +11,6 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
+    counting_chars = {char: nums.count(char) for char in nums}
+    max_value = max(counting_chars.values())
+    return max_value
